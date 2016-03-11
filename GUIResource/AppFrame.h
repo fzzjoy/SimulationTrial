@@ -44,6 +44,8 @@ typedef enum {
 	APP_MainMenu= 0,
 	APP_Calendar,
 	APP_StopWatch,
+	APP_Clock,
+	APP_Led,
 	APP_AllNums
 }AppIndex_ForUISystem;
 

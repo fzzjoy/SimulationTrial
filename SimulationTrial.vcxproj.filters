@@ -663,9 +663,6 @@
     <ClCompile Include="Application\GUIDEMO_Start.c">
       <Filter>Application</Filter>
     </ClCompile>
-    <ClCompile Include="test.c">
-      <Filter>UIDemo</Filter>
-    </ClCompile>
     <ClCompile Include="GUIResource\AppCommon.c">
       <Filter>GUIResource</Filter>
     </ClCompile>
@@ -682,6 +679,15 @@
       <Filter>UIDemo</Filter>
     </ClCompile>
     <ClCompile Include="UIDemo\AppStopWatch.c">
+      <Filter>UIDemo</Filter>
+    </ClCompile>
+    <ClCompile Include="UIDemo\test.c">
+      <Filter>UIDemo</Filter>
+    </ClCompile>
+    <ClCompile Include="UIDemo\AppClock.c">
+      <Filter>UIDemo</Filter>
+    </ClCompile>
+    <ClCompile Include="UIDemo\AppLed.c">
       <Filter>UIDemo</Filter>
     </ClCompile>
   </ItemGroup>

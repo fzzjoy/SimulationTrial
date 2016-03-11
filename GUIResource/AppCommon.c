@@ -190,16 +190,16 @@ void _MoveShiftWindow(WM_HWIN *hWinIn,MEMDEV_ANIMATION direction,WM_Shift_Option
 			switch (direction)
 			{
 				case MEMDEV_ANIMATION_LEFT:
-					WM_MoveTo(*hWinIn, -240, 0);
+					WM_MoveTo(*hWinIn, -320, 0);
 					break;
 				case MEMDEV_ANIMATION_TOP:
-					WM_MoveTo(*hWinIn, 0, -240);
+					WM_MoveTo(*hWinIn, 0, -320);
 					break;
 				case MEMDEV_ANIMATION_RIGHT:
-					WM_MoveTo(*hWinIn, 240, 0);
+					WM_MoveTo(*hWinIn, 320, 0);
 					break;
 				case MEMDEV_ANIMATION_BOTTOM:
-					WM_MoveTo(*hWinIn, 0, 240);
+					WM_MoveTo(*hWinIn, 0, 320);
 					break;
 				default:
 					break;

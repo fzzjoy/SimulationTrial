@@ -2,6 +2,7 @@
 #include "WM.h"
 #include "BUTTON.h"
 #include "AppFrame.h"
+#include "time.h"
 
 #define BUTTON_ID_CLEAR		0
 #define BUTTON_ID_MULTI		1
@@ -151,6 +152,7 @@ static void _cbStopWatch(WM_MESSAGE *pMsg)
 				WM_InvalidateWindow(pMsg->hWin);
 				break;
 			case BUTTON_ID_EXIT:
+				ModeFlag == STOPWATCH_STOP;
 				GUI_SetAppIndex(APP_MainMenu);
 				GUI_SetAppDirection(MEMDEV_ANIMATION_LEFT);
 				_MoveShiftWindow(&pMsg->hWin, MEMDEV_ANIMATION_RIGHT, 1, 1);
@@ -225,9 +227,13 @@ static void StopWatch_UI(void)
 void MainTask_AppStopWatch(void)
 {
 	WM_HWIN hWinStopWatch;
+	time_t oldtimestamp = 0;
+	time_t curtimestamp = 0;
 
 	GUI_Init();
 	ModeFlag = STOPWATCH_INIT;
+	curtimestamp = oldtimestamp = time(0);
+	STime.min = STime.ms = STime.sec = 0;
 
 	hWinStopWatch = WM_CreateWindow(320, 0, 320, 240, WM_CF_SHOW, _cbStopWatch, 0);
 	WM_SetFocus(hWinStopWatch);
@@ -236,9 +242,15 @@ void MainTask_AppStopWatch(void)
 
 	while (!GUI_CheckCancel(APP_StopWatch))
 	{
-		GUI_Delay(10);
+		GUI_Delay(1);
 		if (ModeFlag == STOPWATCH_RUN)
 		{
+			curtimestamp = time(0);
+			if (1 == curtimestamp - oldtimestamp)
+				OneSecflag = 1;
+			else OneSecflag = 0;
+			oldtimestamp = curtimestamp;
+
 			STime.ms++;
 			if ((STime.ms >= 100) || (1 == OneSecflag))
 			{

@@ -2,7 +2,7 @@
 #include "WM.h"
 #include "BUTTON.h"
 #include "AppFrame.h"
-
+#include "time.h"
 
 #define BUTTON_ID_LEFT		0
 #define BUTTON_ID_RIGHT		1
@@ -303,8 +303,19 @@ static void _cbCalendar(WM_MESSAGE *pMsg)
 void MainTask_AppCalendar(void)
 {
 	WM_HWIN hWinCalendar;
+	time_t curtimestamp = 0;
+	struct tm *currUtime;
+	
+	//Init Time
+	curtimestamp = time(0);
+	currUtime = localtime(&curtimestamp);
+	cldDate.year = currUtime->tm_year+1900;
+	cldDate.month = currUtime->tm_mon+1;
+	cldDate.day = currUtime->tm_mday;
+	if (currUtime->tm_wday == 0)
+		cldDate.weekday = 7;
+	else cldDate.weekday = currUtime->tm_wday;
 
-	//GUI_Init();
 	hWinCalendar = WM_CreateWindow(320, 0, 320, 240, WM_CF_SHOW, _cbCalendar, 0);
 	WM_SetFocus(hWinCalendar);
 	_MoveShiftWindow(&hWinCalendar, MEMDEV_ANIMATION_LEFT, WM_Shift_ToLCD, 0);
