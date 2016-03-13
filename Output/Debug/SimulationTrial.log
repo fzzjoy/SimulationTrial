@@ -1,12 +1,25 @@
-﻿生成启动时间为 2016/3/11 星期五 23:09:09。
+﻿生成启动时间为 2016/3/13 星期日 19:02:51。
      1>项目“D:\GraduationProject\UCgui5.24\SimulationTrial\SimulationTrial.vcxproj”在节点 2 上(Build 个目标)。
      1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of GUIConf.c will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are Config\GUIConf.c, Sample\Tutorial\MEMDEV_WindowEffects\GUIConf.c, Sample\Tutorial\WIDGET_Treeview\GUIConf.c.
      1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of LCDConf.c will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are Config\LCDConf.c, Sample\Tutorial\MOTION_IconSlide\LCDConf.c, Sample\Tutorial\MULTILAYER_PictureViewer\LCDConf.c, Sample\Tutorial\SIM_CustomBitmapView\LCDConf.c, Sample\Tutorial\ALPHA_DawBitmapHWAlpha\LCDConf.c, Sample\Tutorial\ALPHA_TransparentDialog\LCDConf.c, Sample\Tutorial\COLOR_DemoLUT\LCDConf.c, Sample\Tutorial\MEMDEV_ImageFlow\LCDConf.c, Sample\Tutorial\MEMDEV_ListWheelEffects\LCDConf.c, Sample\Tutorial\MEMDEV_WindowEffects\LCDConf.c, Sample\Tutorial\MULTILAYER_AlphaChromaMove\LCDConf.c, Sample\Tutorial\SKINNING_NestedModal\LCDConf.c, Sample\Tutorial\SKINNING_Notepad\LCDConf.c, Sample\Tutorial\VSCREEN_MultiPage\LCDConf.c, Sample\Tutorial\VSCREEN_RealTime\LCDConf.c, Sample\Tutorial\WIDGET_IconView\LCDConf.c, Sample\Tutorial\WIDGET_ListWheel\LCDConf.c, Sample\Tutorial\WIDGET_SchemeLarge\LCDConf.c, Sample\Tutorial\WIDGET_SchemeMedium\LCDConf.c, Sample\Tutorial\WIDGET_SchemeSmall\LCDConf.c.
      1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of SIMConf.c will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are Config\SIMConf.c, Sample\Tutorial\MULTILAYER_PictureViewer\SIMConf.c, Sample\Tutorial\SIM_CustomBitmapView\SIMConf.c, Sample\Tutorial\ALPHA_DawBitmapHWAlpha\SIMConf.c, Sample\Tutorial\MULTILAYER_AlphaChromaMove\SIMConf.c, Sample\Tutorial\SIM_HardKey\SIMConf.c.
-     1>Link:
+     1>ClCompile:
+         E:\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ID:\GraduationProject\UCgui5.24\SimulationTrial\GUIResource /IGUI\Include /IConfig /ZI /nologo /W3 /WX- /Od /Oy- /D _DEBUG /D TARGET_1375_C8_137X /D WIN32 /D _WINDOWS /D _VC80_UPGRADE=0x0600 /D _MBCS /Gm- /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"D:\GraduationProject\UCgui5.24\SimulationTrial\Output\Debug\\" /Fd"D:\GraduationProject\UCgui5.24\SimulationTrial\Output\Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt UIDemo\test.c
+         test.c
+       Link:
+         E:\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\GraduationProject\UCgui5.24\SimulationTrial\Exe\GUISimulationDebug.exe" /INCREMENTAL /NOLOGO winmm.lib libcmt.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /NODEFAULTLIB /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\GraduationProject\UCgui5.24\SimulationTrial\Output\Debug\SimulationTrial.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\GraduationProject\UCgui5.24\SimulationTrial\Exe\GUISimulationDebug.lib" /MACHINE:X86 /SAFESEH:NO D:\GraduationProject\UCgui5.24\SimulationTrial\Output\Debug\GUIConf.obj
+         D:\GraduationProject\UCgui5.24\SimulationTrial\Output\Debug\LCDConf.obj
+         D:\GraduationProject\UCgui5.24\SimulationTrial\Output\Debug\IconResource.obj
+         D:\GraduationProject\UCgui5.24\SimulationTrial\Output\Debug\test.obj
+         D:\GraduationProject\UCgui5.24\SimulationTrial\Output\Debug\SIMConf.obj
+         D:\GraduationProject\UCgui5.24\SimulationTrial\Output\Debug\WinMain.obj
+         D:\GraduationProject\UCgui5.24\SimulationTrial\Output\Debug\FS.obj
+         GUI\Library\GUI.lib
+         Simulation\GUISim.lib
+         Simulation\Simulation.res
          SimulationTrial.vcxproj -> D:\GraduationProject\UCgui5.24\SimulationTrial\Exe\GUISimulationDebug.exe
      1>已完成生成项目“D:\GraduationProject\UCgui5.24\SimulationTrial\SimulationTrial.vcxproj”(Build 个目标)的操作。
 
 生成成功。
 
-已用时间 00:00:00.82
+已用时间 00:00:00.57

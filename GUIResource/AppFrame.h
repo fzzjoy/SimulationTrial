@@ -46,6 +46,7 @@ typedef enum {
 	APP_StopWatch,
 	APP_Clock,
 	APP_Led,
+	APP_Calculator,
 	APP_AllNums
 }AppIndex_ForUISystem;
 

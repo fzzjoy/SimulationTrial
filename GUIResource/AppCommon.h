@@ -51,6 +51,7 @@ void MainTask_AppCalendar(void);
 void MainTask_AppStopWatch(void);
 void MainTask_AppClock(void);
 void MainTask_AppLed(void);
+void MainTask_AppCalculator(void);
 
 
 #endif

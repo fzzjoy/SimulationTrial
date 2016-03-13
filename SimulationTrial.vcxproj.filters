@@ -690,6 +690,12 @@
     <ClCompile Include="UIDemo\AppLed.c">
       <Filter>UIDemo</Filter>
     </ClCompile>
+    <ClCompile Include="UIDemo\AppCalculator.c">
+      <Filter>UIDemo</Filter>
+    </ClCompile>
+    <ClCompile Include="UIDemo\FS.c">
+      <Filter>UIDemo</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Config\GUIConf.h">
@@ -949,6 +955,9 @@
     </ClInclude>
     <ClInclude Include="GUIResource\AppFrame.h">
       <Filter>GUIResource</Filter>
+    </ClInclude>
+    <ClInclude Include="UIDemo\FS.h">
+      <Filter>UIDemo</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
