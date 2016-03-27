@@ -47,6 +47,7 @@ typedef enum {
 	APP_Clock,
 	APP_Led,
 	APP_Calculator,
+	APP_File,
 	APP_AllNums
 }AppIndex_ForUISystem;
 

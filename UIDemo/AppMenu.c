@@ -109,6 +109,12 @@ static void _cbMenu(WM_MESSAGE *pMsg)
 				GUI_SetCancel(APP_MainMenu);
 				GUI_ClearHalt(); // Clear _Halt, so 
 				break;
+			case BUTTON_ID_FILESYSTEM:
+				GUI_SetAppIndex(APP_File);
+				GUI_SetAppDirection(MEMDEV_ANIMATION_BOTTOM);
+				GUI_SetCancel(APP_MainMenu);
+				GUI_ClearHalt(); // Clear _Halt, so 
+				break;
 			default:
 				break;
 			}

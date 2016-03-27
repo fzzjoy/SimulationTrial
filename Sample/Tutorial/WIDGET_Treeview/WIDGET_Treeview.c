@@ -224,7 +224,7 @@ void MainTask(void) {
   // Create TREEVIEW
   //
   hTree = TREEVIEW_CreateEx(0, 0, xSize, ySize, WM_HBKWIN, WM_CF_SHOW, 0, GUI_ID_TREEVIEW0);
-  TREEVIEW_SetAutoScrollV(hTree, 1);
+  TREEVIEW_SetAutoScrollV(hTree, 1);//管理自动使用垂直滚动条。
   TREEVIEW_SetSelMode(hTree, TREEVIEW_SELMODE_ROW);
   //
   // Fill TREEVIEW
